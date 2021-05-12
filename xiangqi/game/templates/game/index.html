@@ -1,26 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen"/>
-        <meta charset="UTF-8">
-        <title>Xiangqi Game</title>
-    </head>
-    <main>
-        <header>
-            <div id="banner">
-                <a id="logo" href="">Xiangqi</a>
-                <div class="topnav">
-                    <a href="./" class="active">Home</a>
-                    <a href="">Game</a>
-                    <a href="./rules">Rules</a>
-                </div>
-            </div>
-        </header>
-        <body>
-            <div id="main">
-                <p>Xiangqi Game</p>
-            </div>
-        </body>
-    </main>
-</html>
+{% extends "./base.html" %}
+
+{% block title %}Xiangqi{% endblock %}
+
+{% block content %}
+    <h1 id="title">Chinese Chess</h1>
+{% endblock %}

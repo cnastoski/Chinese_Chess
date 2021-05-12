@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen"/>
+        <meta charset="UTF-8">
+        <title>{% block title %}Xiangqi{% endblock %}</title>
+    </head>
+    <main>
+        <header>
+            <div id="banner">
+                <a id="logo" href="">Xiangqi</a>
+                <div class="topnav">
+                    <a href="./">Home</a>
+                    <a href="">Game</a>
+                    <a href="./rules">Rules</a>
+                </div>
+            </div>
+        </header>
+        <body>
+            <div id="main">
+                {% block content %}{% endblock %}
+            </div>
+        </body>
+    </main>
+</html>
