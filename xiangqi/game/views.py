@@ -3,8 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-from django.http import HttpResponse
-
 
 # Index view - landing page
 def index(request):
