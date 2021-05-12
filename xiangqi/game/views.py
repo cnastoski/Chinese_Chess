@@ -13,5 +13,5 @@ def rules(request):
     return render(request, 'game/rules.html')
 
 # Main game view
-def game(request, user):
-    return HttpResponse('Blank')
+def play(request):
+    return render(request, 'game/play.html')
