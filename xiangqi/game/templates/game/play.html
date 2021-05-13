@@ -1,17 +1,11 @@
 {% extends "./base.html" %}
+{% load static %}
 
 {% block title %}Xiangqi{% endblock %}
 
 {% block content %}
-    <!--
-    Reactjs imports
-    ---- IMPORTANT!! ----
-    Replace "development.js" with "production.min.js"
-    -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="{% static 'dist/main.js' %}"></script>
     <h1 id="title">game</h1>
-    <script>
-
-    </script>
+        <div id="gamewrapper">
+        </div>
 {% endblock %}

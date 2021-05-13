@@ -1,0 +1,21 @@
+{
+  "name": "xiangqi",
+  "version": "1.0.0",
+  "description": "Chinese Chess",
+  "main": "game/static/dist/main.js",
+  "scripts": {
+    "build": "parcel build game/static/src/parcel-entry.js ",
+    "start": "parcel game/static/src/parcel-entry.js --hmr-port 34471"
+  },
+  "author": "Nick Nastoski, Chris Nastoski, Liam Wilkie",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}

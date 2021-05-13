@@ -1,0 +1,2 @@
+function e(e){return e&&e.__esModule?e.default:e}require("github-fork-ribbon-css/gh-fork-ribbon.css");var r=e(require("react-dom")),t=e(require("react"));r.render(t.createElement(App,null),document.getElementById("root"));
+//# sourceMappingURL=main.js.map
