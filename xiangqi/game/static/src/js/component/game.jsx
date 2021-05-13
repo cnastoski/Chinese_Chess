@@ -29,6 +29,6 @@ class Row extends React.component {
 
 class Game extends React.component{
     render(){
-        <div className="game"></div>
+        <div className="game" />
     }
 }

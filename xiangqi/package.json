@@ -4,8 +4,8 @@
   "description": "Chinese Chess",
   "main": "game/static/dist/main.js",
   "scripts": {
-    "build": "parcel build game/static/src/parcel-entry.js ",
-    "start": "parcel game/static/src/parcel-entry.js --hmr-port 34471"
+    "build": "parcel build game/static/src/js/index.js --no-scope-hoist",
+    "start": "parcel game/static/src/js/index.js --hmr-port 34471"
   },
   "author": "Nick Nastoski, Chris Nastoski, Liam Wilkie",
   "license": "ISC",
@@ -23,8 +23,8 @@
   },
   "babel": {
     "presets": [
-        "@babel/env",
-        "@babel/react"
+      "@babel/env",
+      "@babel/react"
     ]
-}
+  }
 }
