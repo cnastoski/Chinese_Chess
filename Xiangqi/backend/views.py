@@ -1,17 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
+# This is the backend!
 
-
-# Index view - landing page
-def index(request):
-    return render(request, 'game/index.html')
-
-# Instructions view
-def rules(request):
-    return render(request, 'game/rules.html')
-
-# Main game view
-def play(request):
-    return render(request, 'game/play.html')
+# No main page views here -- that is handled in front end
+# Admin and database pages are permissible

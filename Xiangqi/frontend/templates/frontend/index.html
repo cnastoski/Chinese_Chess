@@ -1,29 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}Xiangqi{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen"/>
-        <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" sizes="32x32">
-    </head>
-    <main>
-        <header>
-            <div id="banner">
-                <a id="logo" href="">Xiangqi</a>
-                <div class="topnav">
-                    <a href="./">Home</a>
-                    <a href="./play">Game</a>
-                    <a href="./rules">Rules</a>
-                </div>
-            </div>
-        </header>
-        <body>
-            <div id="main">
-                <div id="app"></div>
-            </div>
+{% extends "./base.html" %}
 
-            <script src="{% static 'frontend/main.js' %}"></script>
-        </body>
-    </main>
+{% block title %}Xiangqi{% endblock %}
+
+{% block content %}
+    <h1 id="title">Chinese Chess</h1>
+{% endblock %}
